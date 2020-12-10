@@ -2,8 +2,7 @@
   	var d=['i2.jpg','i3.jpg','i1.jpg'];
   	var c=0;
   	var a;
-  	abc();
-  	
+  	abc();  	
   	function abc()
   	{
   	a=setInterval(slideshow,2000);
@@ -60,6 +59,9 @@
   		$(".imgstyle").stop();
   		$(".imgstyle").attr("src",b[c%3]);
   		$(".imgstyle").css("width","100%");
+      $("#a0").css('background-color',"black");
+      $("#a1").css('background-color',"grey");
+      $("#a2").css('background-color',"grey");
   		clearInterval(a);
   		abc();
   	});
@@ -68,6 +70,9 @@
   		$(".imgstyle").stop();
   		$(".imgstyle").attr("src",b[c%3]);
   		$(".imgstyle").css("width","100%");
+      $("#a1").css('background-color',"black");
+      $("#a0").css('background-color',"grey");
+      $("#a2").css('background-color',"grey");
   		clearInterval(a);
   		abc();
   	});
@@ -76,6 +81,9 @@
   		$(".imgstyle").stop();
   		$(".imgstyle").attr("src",b[c%3]);
   		$(".imgstyle").css("width","100%");
+      $("#a2").css('background-color',"black");
+      $("#a1").css('background-color',"grey");
+      $("#a0").css('background-color',"grey");
   		clearInterval(a);
   		abc();
   	});
