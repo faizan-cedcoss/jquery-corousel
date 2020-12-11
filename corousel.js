@@ -38,7 +38,14 @@
   	$(".btn-right").click(right);
   	function left()
   	{
+		if(c==0)
+		{
+		 c=2;
+		}
+		else
+		{
   		c-=1;
+		}
   		$(".imgstyle").stop();
   		$(".imgstyle").attr("src",b[c%3]);
   		$(".imgstyle").css("width","100%");
